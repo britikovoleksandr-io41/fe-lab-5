@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Лабораторна робота №5: JavaScript, події та регулярні вирази">
+    <title>Брітіков О., ІО-41, ЛР5, варіант 66</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Лабораторна робота №5</h1>
+
+    <section>
+        <h2>Завдання 1. Форма з перевіркою (варіант 66 → рядок 6 таблиці 1)</h2>
+        <div class="task1">
+            <form id="form" novalidate>
+                <h3>Форма для заповнення</h3>
+
+                <div class="field">
+                    <label for="fio">ПІБ</label>
+                    <input id="fio" type="text" placeholder="Брітіков О.Д." autocomplete="off">
+                    <span class="msg"></span>
+                </div>
+                <div class="field">
+                    <label for="birth">Дата народж.</label>
+                    <input id="birth" type="text" placeholder="29.05.2007" autocomplete="off">
+                    <span class="msg"></span>
+                </div>
+                <div class="field">
+                    <label for="address">Адреса</label>
+                    <input id="address" type="text" placeholder="м. 123456" autocomplete="off">
+                    <span class="msg"></span>
+                </div>
+                <div class="field">
+                    <label for="email">e-mail</label>
+                    <input id="email" type="text" placeholder="name@mail.com" autocomplete="off">
+                    <span class="msg"></span>
+                </div>
+                <div class="field">
+                    <label for="telegram">Telegram</label>
+                    <input id="telegram" type="text" placeholder="@user_name" autocomplete="off">
+                    <span class="msg"></span>
+                </div>
+
+                <button type="submit">Підтвердити</button>
+            </form>
+
+            <aside id="result" class="result" hidden></aside>
+        </div>
+    </section>
+
+    <section>
+        <h2>Завдання 2. Таблиця 6×6 (варіант 66 → комірка 6, dblClick: прямокутник)</h2>
+        <div class="toolbar">
+            <label for="palette">Колір з палітри:</label>
+            <input id="palette" type="color" value="#ff0000">
+            <button type="button" id="reset">Очистити таблицю</button>
+        </div>
+        <table id="grid"></table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
